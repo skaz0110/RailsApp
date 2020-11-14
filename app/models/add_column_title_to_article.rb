@@ -1,0 +1,2 @@
+class AddColumnTitleToArticle < ApplicationRecord
+end
