@@ -2,7 +2,7 @@
     <%= form_for(@task) do |f| %>
         <div><%= f.label :title %></div>
         <div><%= f.text_field :title %></div>
-        <div><%= f.text_field :deadline %></div>      
+        <%= f.date_select :deadline ,{:discard_year => true,:use_two_digit_numbers => true}%>
         <div><%= f.submit %></div>
     <% end %>
 <%= link_to '戻る',tasks_path%>
